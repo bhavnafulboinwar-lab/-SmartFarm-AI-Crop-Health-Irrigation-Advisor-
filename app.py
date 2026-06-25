@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import os
-from utils.predictor import predict_disease, irrigation_advisor
+from predictor import predict_disease, irrigation_advisor
 
 app = Flask(__name__)
 
