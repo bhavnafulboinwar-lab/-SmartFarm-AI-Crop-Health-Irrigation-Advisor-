@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartFarm AI</title>
+    <link rel="stylesheet"
+    href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌱 SmartFarm AI</h1>
+
+<form action="/predict"
+method="POST"
+enctype="multipart/form-data">
+
+<label>Upload Leaf Image</label>
+
+<input type="file"
+name="image"
+required>
+
+<label>Soil Moisture (%)</label>
+
+<input type="number"
+name="soil"
+required>
+
+<label>Temperature (°C)</label>
+
+<input type="number"
+name="temp"
+required>
+
+<label>Humidity (%)</label>
+
+<input type="number"
+name="humidity"
+required>
+
+<button type="submit">
+Analyze Crop
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
