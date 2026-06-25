@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 
 def predict_disease(image_path):
+    
 
     img = cv2.imread(image_path)
 
